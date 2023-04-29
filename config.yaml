@@ -1,0 +1,2 @@
+task_1:
+  gcp_filepath: gs://cloud-samples-data/ai-platform-unified/datasets/tabular/petfinder-tabular-classification.csv
