@@ -1,2 +1,18 @@
-task_1:
+data:
   gcp_filepath: gs://cloud-samples-data/ai-platform-unified/datasets/tabular/petfinder-tabular-classification.csv
+  dataset_config:
+    target: "Adopted"
+    sample _frac: 1.0
+    random_state: 42
+    train_ratio: 0.6
+    val_ratio: 0.2
+    test_ratio: 0.2
+  model_data:
+    target_dir: "artifacts/"
+    model_file: "model.joblib"
+  test_data:
+    target_dir: "output/"
+    output_file: "results.csv"
+model:
+  early_stopping_rounds: 10
+  eval_metric: auc
